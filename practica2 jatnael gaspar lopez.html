@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //calculadora basica
+let numero1;
+let numero2;
+numero1 = parseFloat(prompt('ingrese un numero',''));
+numero2 = parseFloat(prompt('ingrese otro numero',''));
+let suma = numero1 + numero2;
+let resta = numero1 - numero2;
+let multi = numero1 * numero2;
+let div = numero1 / numero2;
+document.write('el valor de la suma es:', + suma +"<br>");
+document.write('el valor de la resta es:', + resta +"<br>");
+document.write('el valor de la multiplicacion es:', + multi +"<br>");
+document.write('el valor de la divicion es:', + div +"<br>");
+    </script>
+
+
+
+    <script>
+        //ecuacion cuadratica
+    let a = parseFloat(prompt ("introduce el valor de a",""));
+    let b = parseFloat(prompt ("introduce el valor de b",""));
+    let c = parseFloat(prompt ("introduce el valor de c",""));
+    let solu1 = (-1*b)+(Math.sqrt(Math.pow(b,2))-(4*a*c))/(2*a);
+    let solu2 = (-1*b)-(Math.sqrt(Math.pow(b,2))-(4*a*c))/(2*a);
+    document.write('el valor de x1 =', + solu1 +"<br>");
+    document.write('el valor de x2 =', + solu2);
+
+    </script>
+</body>
+</html>
