@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // calculadora con el ciclo do-while
+let numero1;
+let numero2;
+let op;
+let resp = "";
+let i;
+do{
+numero1 = parseFloat(prompt('ingrese un numero',''));
+op = prompt ("ingrese un operador:","")
+numero2 = parseFloat(prompt('ingrese otro numero',''));
+if (op =="+"){
+    let suma = numero1 + numero2;
+    prompt ('el valor de la suma es:', + suma );
+}
+else if (op =="-") {
+    let resta = numero1 - numero2;
+    prompt('el valor de la resta es:', + resta );
+}
+else if (op =="*"){
+    let multi = numero1 * numero2;
+    prompt('el valor de la multiplicacion es:', + multi );
+}
+else if (op =="/"){
+    let div = numero1 / numero2;
+    prompt('el valor de la divicion es:', + div);
+
+}
+else if (op == "^"){
+    prompt('el valor de la potencia es:', + Math.pow (numero1,numero2));
+}
+resp = prompt ("¿desea volver a ejecutar otra operacion s/n?","")
+
+i++
+}
+while (resp != "n")
+document.write("gracias")
+    </script>
+
+
+
+
+<script>
+    //EJERCICIOS VIDEO NUMERO 35 
+
+ //1.-programa una funcion que cuente el numero de caracteres de una cadena de texto// 
+function contarcaracteres (cadena = "hola mundo"){
+    if (!cadena){
+        console.warn("no ingresaste ninguna cadena"); 
+        }else{
+            console.info(`la cadena'${cadena}': tiene '${cadena.length}'caracteres,`);
+    
+        }
+    }
+    contarcaracteres ("hola mundo");
+</script>
+
+
+
+
+
+<script>
+ //2.-programa una funcion que te devuelva el texto recortado segun el numero de caracteres indicados 
+ const recortarTexto=(cadena ="",longitud=undefined)=>
+ (!cadena)
+ ? console.warn("no ingresaste una cadena de texto")
+ :console.info(cadena.slice(0,longitud));
+ recortarTexto("hola mundo",5) 
+</script>
+
+
+
+
+
+<script>
+
+// 3.- programa una funcion que dada una funcion que dada una string te devuelva un array de textos separados
+//por cierto caracter 
+const cadenaAArreglo=(cadena ="",separador=undefined)=>
+(!cadena)
+? console.warn("no ingresaste una cadena de texto")
+:(separador===undefined)
+? console.warn("no ingresaste el caracter separador")
+:console.info(cadena.split(separador));
+ 
+cadenaAArreglo("Ene,Feb,Mar,Abr,May,jun,jul,ago,sep,oct,nov,dic",",");
+</script>
+
+
+
+
+
+<script>
+//4.-programa una funcion que repita un tecto X veces.
+const cadenaTexto = ( cadena = "" ) => { 
+     
+    if(!cadena) { 
+        console.log("no hay una cadena de texto");
+     } else { 
+           console.log(cadena.repeat( 4 ) );     
+     } 
+} 
+
+cadenaTexto("hola ");
+</script>
+</body>
+</html>
